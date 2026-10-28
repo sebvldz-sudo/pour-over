@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#121a18">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Pour Lab">
+<meta name="description" content="An offline-first pour-over coffee journal, guided timer, and evidence-aware brewing reference.">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="icon" type="image/png" href="./icon-192.png">
+<link rel="stylesheet" href="./styles.css">
+<title>Pour Lab · Coffee notebook</title>
+</head>
+<body>
+<div id="app" class="app-frame">
+  <header class="app-header">
+    <div class="brand-group"><div class="brand-mark" aria-hidden="true">◉</div><div><div class="brand-eyebrow">PERSONAL COFFEE LAB</div><div class="brand-name">POUR<span>LAB</span></div></div></div>
+    <div id="connection-status" class="connection-pill"><span class="status-dot"></span> Local only</div>
+  </header>
+  <main id="main" tabindex="-1"><div class="loading">Opening your coffee notebook…</div></main>
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <button data-nav="brew" class="nav-button selected"><span class="nav-icon">◉</span><span>Brew</span></button>
+    <button data-nav="recipes" class="nav-button"><span class="nav-icon">▤</span><span>Recipes</span></button>
+    <button data-nav="history" class="nav-button"><span class="nav-icon">▥</span><span>Journal</span></button>
+    <button data-nav="learn" class="nav-button"><span class="nav-icon">⌁</span><span>Library</span></button>
+    <button data-nav="settings" class="nav-button"><span class="nav-icon">⚙</span><span>Settings</span></button>
+  </nav>
+</div>
+<div id="modal-root"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="./app.js" defer></script>
+</body>
+</html>
